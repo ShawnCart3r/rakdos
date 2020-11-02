@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  body {
+    background-image: url(./image/rakdos3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    background-image: url(./image/rakdos2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 375px;
+    background-color: hsl(355, 93%, 18%);
+    padding: 3rem;
+  }
+  
+  header {
+    height: 10%;
+  }
+  
+  .logo {
+    width: 10rem;
+  }
+  
+  main {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  
+  .main-image {
+    margin: 2rem 0;
+  }
+  
+  .main-text {
+    margin: 2rem 0;
+    text-align: center;
+  }
+  
+  .main-text h2 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: rgb(90, 3, 3);
+    margin-bottom: 1rem;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .main-text p {
+    font-weight: 400;
+    color: rgb(145, 3, 3);
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  button {
+    justify-content: center;
+    
+    align-items: center;
+    font-size: 0.8rem;
+    background-color: rgb(131, 22, 22);
+    color: hsl(0, 66%, 18%);
+    box-shadow: 0 3px 10px hsl(260, 43%, 25%);
+    border-radius: 40px;
+    width: 200px;
+    height: 35px;
+    border: 0;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  footer {
+    height: 10%;
+    width: 100%;
+  }
+  
+  .social-media-icons {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  
+  .blank-circle {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0.3em;
+  }
+  
+  svg {
+    display: inline-block;
+    height: 13px;
+    width: 13px;
+  }
+  
+  @media screen and (min-width: 1000px) {
+    .container {
+      
+      background-position: center center;
+      width: 1440px;
+      height: 100%;
+      padding: 2rem 5rem;
+    }
+    .logo {
+      width: 11rem;
+    }
+    main {
+      flex-direction: row;
+      padding-top: 3rem;
+    }
+    .main-image,
+    .main-text {
+      width: 50%;
+    }
+    .main-text {
+      text-align: left;
+      padding: 2rem 0 0 3rem;
+    }
+    .main-text h2 {
+      font-size: 3rem;
+    }
+    .button-container {
+      justify-content: flex-start;
+    }
+    button {
+      width: 170px;
+      height: 45px;
+    }
+    .social-media-icons {
+      justify-content: flex-end;
+    }
+    .blank-circle {
+      height: 40px;
+      width: 40px;
+      border: 2px solid #fff;
+    }
+    svg {
+      height: 20px;
+      width: 20px;
+    }
+  }
